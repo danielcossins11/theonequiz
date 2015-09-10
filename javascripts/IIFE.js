@@ -9,3 +9,7 @@ var FruitMaker = function(){
     }
   };
 }();
+
+console.log(FruitMaker.addFruits("Pear"));
+console.log(FruitMaker.getFruits());
+console.log(FruitMaker.slices("Pear", 3));

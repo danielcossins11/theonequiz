@@ -60,7 +60,7 @@ function getAnimals(){
     url: "../data/animals.json"
   })
   .done(function(data) {
-    console.log(data.animals);
+    console.log("animals", data.animals);
   });
 }
 getAnimals();
