@@ -1,0 +1,31 @@
+li:first-sibling{
+
+}
+
+li{
+  display: inline;
+}
+
+article section:nth-child(2n+1){
+  border: 5px solid black;
+}
+
+ul li:nth-child(2n){
+  background-color: lime;
+}
+
+section aside:first-child{
+  color: blue;
+}
+
+div:first-of-type{
+  float: right;
+}
+
+div:first-of-type+div{
+  float: left;
+}
+
+div:first-of-type+div+div{
+  clear: both;
+}
