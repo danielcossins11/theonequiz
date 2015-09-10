@@ -28,10 +28,15 @@ http-server
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
 
-  **Student answer: **
+  **Student answer: Hoisting refers to the load order of javascript variables and functions. For example: ```for(var i=0; i<somthing.length; i++){//do something}```
+  javascript actually reads this as: ```var i=0; for(i<something.length; i++){//do something}```
+  the variable i is "hoisted" to the top of the code.**
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
 
-  **Student answer: **
+  **Student answer: A callback is a way to call a function via passing it through another function and calling that other function.**
+  ```function doSomthing(){console.log("callback");}
+  function a(func){return func;}
+  a(doSomthing);```
 
 ## Functions and operators
 
@@ -61,18 +66,24 @@ http-server
 1. Write a function named `getAnimals` that uses the jQuery `ajax` method to retrieve the `data/animals.json` file. When you execute the functions, it should just log *just the array* of animals to the console when the async is complete. Make sure you provide a prompt of "animals" when logging the array.
 1. What are the four HTTP verbs that you can use in an XHR that correspond to the CRUD actions (create, read, update, delete)?
   **Student answer:**
+POST 
+GET 
+PUT
+DELETE
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
-  **Student answer:**
+  **Student answer:** It's an easier way (than callbacks) to make sure all data is loaded before proceeding. It ensures that any code written inside of the promise function will wait for the ajax call to complete before excecuting.
 
 1. Provide a simple example of the syntax for handling a Promise.
   **Student answer:**
+```var promiseData = getData();```
+```promiseData.then(function(data){//do something with data in here});```
 
 ## Scope and this
 
 What gets logged to the console when the following code executes? Explain why.
 
-**Student answer: **
+**Student answer: 42 Because "this" refers to the scope of where the original function was called. Since Steve() was the original function, and "answer" equals 42 in that scope, 42 is the answer. **
 
 ```
 var answer = "42";
