@@ -1,5 +1,5 @@
-li:first-sibling{
-
+article section:first-child li{
+  color: red;
 }
 
 li{
