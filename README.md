@@ -34,6 +34,9 @@ http-server
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
 
   **Student answer: A callback is a way to call a function via passing it through another function and calling that other function.**
+  ```function doSomthing(){console.log("callback");}```
+  ```function a(func){return func;}```
+  ```a(doSomthing);```
 
 ## Functions and operators
 
