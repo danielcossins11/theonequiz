@@ -28,10 +28,12 @@ http-server
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
 
-  **Student answer: **
+  **Student answer: Hoisting refers to the load order of javascript variables and functions. For example: ```for(var i=0; i<somthing.length; i++){//do something}```
+  javascript actually reads this as: ```var i=0; for(i<something.length; i++){//do something}```
+  the variable i is "hoisted" to the top of the code.**
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
 
-  **Student answer: **
+  **Student answer: A callback is a way to call a function via passing it through another function and calling that other function.**
 
 ## Functions and operators
 
