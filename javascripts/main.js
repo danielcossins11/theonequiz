@@ -9,6 +9,7 @@ $("#jquery_output").html("This content generated with jQuery");
 function modulus(a, b){
   return a%b;
 }
+console.log(modulus(10, 3));
 
 function doMath(a, b, func){
   return func(a, b);
