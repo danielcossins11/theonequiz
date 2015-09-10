@@ -78,7 +78,7 @@ DELETE
 
 What gets logged to the console when the following code executes? Explain why.
 
-**Student answer: **
+**Student answer: 42 Because "this" refers to the scope of where the original function was called. Since Steve() was the original function, and "answer" equals 42 in that scope, 42 is the answer. **
 
 ```
 var answer = "42";
