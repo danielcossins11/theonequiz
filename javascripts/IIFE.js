@@ -4,8 +4,9 @@ var FruitMaker = function(){
     getFruits: function(){
       return fruits;
     },
-    addFruits: function(newFruit){
+    addFruit: function(newFruit){
       fruits.push(newFruit);
+      return fruits;
     }
   };
 }();
